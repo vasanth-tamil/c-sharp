@@ -7,6 +7,8 @@ namespace TodoApp.Controllers
     [Route("")]
     public class WebController : Controller
     {
+        [Route("")]
+        [Route("Index")]
         public IActionResult Index()
         {
             var item = new
@@ -18,5 +20,20 @@ namespace TodoApp.Controllers
             };
             return View(item);
         }
+
+        [Route("show/{id:int}")]
+        public IActionResult Show(int id)
+        {
+            var item = new { Id = id };
+            return View(item);
+        }
+
+        [Route("product/{id:int}/overview")]
+        public IActionResult OverView(int id)
+        {
+            var item = new { ProductId = id };
+            return View(item);
+        }
+
     }
 }
