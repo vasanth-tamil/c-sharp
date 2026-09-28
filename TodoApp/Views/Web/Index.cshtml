@@ -8,30 +8,18 @@
 </head>
 <body>
     <div class="container border p-5 mt-5">
-        <h4 class="text-capitalize">@Model.Title</h4>
-        <p>@Model.News</p>
-        <label class="text-uppercase">@Model.Date</label>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
 
-        
-        <section>
-            <label class="text-primary">primary</label>
-            <label class="text-secondary">secondary</label>
-            <label class="text-success">success</label>
-            <label class="text-warning">warning</label>
-            <label class="text-danger">danger</label>
-        </section>
-        
-        <section>
-            <label class="bg-primary p-4"></label>
-            <label class="bg-secondary p-4"></label>
-            <label class="bg-success p-4"></label>
-            <label class="bg-warning p-4"></label>
-            <label class="bg-danger p-4"></label>
-        </section>
-
-        <section>
-            <label class="bg-primary text-white p-4">primary</label>
-        </section>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+            <label class="form-check-label" for="checkDefault">
+                Accept User Agrements & Terms and conditions.
+            </label>
+        </div>
+        <button type="button" class="btn btn-primary mt-2">Login</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
